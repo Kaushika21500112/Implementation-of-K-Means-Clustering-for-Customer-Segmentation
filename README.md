@@ -47,7 +47,7 @@ plt.ylabel("wcss")
 plt.title("Elbow Method")
 plt.show()
 
-#creating cluster segments
+#predicting clusters
 km = KMeans(n_clusters = 5)
 km.fit(df.iloc[:,3:])
 y_pred = km.predict(df.iloc[:,3:])
@@ -58,7 +58,7 @@ df2 = df[df["cluster"]==2]
 df3 = df[df["cluster"]==3]
 df4 = df[df["cluster"]==4]
 
-#visualising the cluster segments 
+#visualising the clusters
 plt.scatter(df0["Annual Income (k$)"],df0["Spending Score (1-100)"],c="yellow",label="cluster0")
 plt.scatter(df1["Annual Income (k$)"],df1["Spending Score (1-100)"],c="pink",label="cluster1")
 plt.scatter(df2["Annual Income (k$)"],df2["Spending Score (1-100)"],c="cyan",label="cluster2")
@@ -78,7 +78,7 @@ plt.show()
 ![](o3.png)
 ### Elbow method graph (wcss vs each iteration):
 ![](o4.png)
-### Cluster segments graph:
+### Cluster represnting customer segments-graph:
 ![](o5.png)
 
 ## Result:
