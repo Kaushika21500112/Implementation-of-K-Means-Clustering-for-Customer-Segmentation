@@ -70,7 +70,7 @@ plt.show()
 ```
 
 ## Output:
-### Initial Dataset:
+### Dataset:
 ![](o1.png)
 ### Dataset information:
 ![](o2.png)
